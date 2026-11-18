@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fbfbf7;
+  --foreground: #1c3629;
+  --card: #ffffff;
+  --card-foreground: #1c3629;
+  --primary: #1f4e38;
+  --primary-foreground: #f4f8f5;
+  --secondary: #eef4f0;
+  --secondary-foreground: #1c3629;
+  --muted: #e7eee9;
+  --muted-foreground: #4e6d5e;
+  --accent: #d8e8dc;
+  --accent-foreground: #1c3629;
+  --sun: #f59e0b;
+  --sun-foreground: #1c3629;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #d4e2d8;
+  --input: #d4e2d8;
+  --ring: #f59e0b;
+}
+
+@layer utilities {
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px) saturate(160%);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8), 0 20px 40px -25px rgba(28, 54, 41, 0.15);
+  }
+
+  .glass-field {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+  }
+
+  .glass-chip {
+    background-color: rgba(238, 244, 240, 0.85);
+    backdrop-filter: blur(8px);
+  }
+
+  .glass-deep {
+    background-color: #1f4e38;
+    backdrop-filter: blur(20px);
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  letter-spacing: -0.02em;
+}
